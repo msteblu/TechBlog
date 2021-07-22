@@ -1,0 +1,17 @@
+[
+  {
+    "username": "Austen",
+    "email": "jane@regency.com",
+    "password": "password12345"
+  },
+  {
+    "username": "Tolkien",
+    "email": "jrr@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "username": "Charles",
+    "email": "dickens@email.com",
+    "password": "password12345"
+  }
+]
