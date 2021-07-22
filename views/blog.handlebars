@@ -1,0 +1,31 @@
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <div class="surround">
+    <p>{{content}}</p>
+    <p class="card-author">Posted by
+      {{user.username}}
+      on
+      {{format_date date_created}}</p>
+    <p>
+      <button class="btn comment-button">Comment</button>
+    </p>
+  </div>
+</div>
+<!-- Loop over each object in the projects array -->
+{{#each comments as |comment|}}
+  <div class="row mb-4 project surround-mini">
+    <div class="col-md-5">
+      <p class="card-author">Posted by
+        {{comment.user.username}}
+        on
+        {{format_date comment.date_created}}</p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        {{comment.comment}}
+      </p>
+    </div>
+  </div>
+{{/each}}
+
+<script src="/js/blog.js"></script>
