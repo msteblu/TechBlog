@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { Blog } = require("../../models");
 const withAuth = require("../../utils/auth");
 
+//CREATE new blog post
 router.post("/", withAuth, async (req, res) => {
   try {
     const newBlog = await Blog.create({
