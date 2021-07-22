@@ -7,21 +7,21 @@ const blogs = [];
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
   const users = await User.bulkCreate(userData, {
-    individualHooks: true,
-    returning: true,
+    // individualHooks: true,
+    // returning: true,
   });
   for (const blog of blogData) {
     const blogAdded = await Blog.create({
       ...blog,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
+      // user_id: users[Math.floor(Math.random() * users.length)].id,
     });
     blogs.push(blogAdded);
   }
   for (const comment of commentData) {
     await Comment.create({
       ...comment,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-      blog_id: blogs[Math.floor(Math.random() * blogs.length)].id,
+      // user_id: users[Math.floor(Math.random() * users.length)].id,
+      // blog_id: blogs[Math.floor(Math.random() * blogs.length)].id,
     });
   }
   process.exit(0);
