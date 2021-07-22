@@ -2,7 +2,7 @@
   {
     "title": "A Truth",
     "content": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    "user_id": 1
+    "user_id": 3
   },
   {
     "title": "Hobbits: Lovely Creatures",
@@ -12,6 +12,6 @@
   {
     "title": "Two Cities",
     "content": "It was the best of times, it was the worst of times.",
-    "user_id": 3
+    "user_id": 1
   }
 ]
