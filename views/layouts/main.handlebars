@@ -10,17 +10,17 @@
 
   <body>
     <header>
-      <script>console.log("main")</script>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        {{#if loggedIn}}
+          <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
+          <a href="/login">Login</a>
+        {{/if}}
+      </nav>
+      <h1 class="heading">The Tech Blog</h1>
     </header>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/dashboard">Dashboard</a>
-      {{#unless loggedIn}}
-        <a href="/login">Login</a>
-      {{/unless}}
-      <button id="logout" class="btn-no-style">Logout</button>
-    </nav>
-    <h1>TechBlog</h1>
     <main>
       <div class="blog">
         {{{body}}}
