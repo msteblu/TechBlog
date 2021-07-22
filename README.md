@@ -30,10 +30,10 @@ If you use the application through the deployed [Heroku site](https://fast-meado
 If the program was cloned, downloaded, and installed instead, get the application running by typing "npm start" into the command-line. All features of the application are then accessible through _localhost_ on your browser or other applications.
 
 _View Blog Posts and Comment_
-![Gif of Homepage](assets/Comments.gif)
+![Gif of Homepage](https://github.com/msteblu/TechBlog/blob/main/public/assets/Comments.gif)
 
 _Interact with Individual Dashboard_
-![Gif of Dashboard](assets/Dashboard.gif)
+![Gif of Dashboard](https://github.com/msteblu/TechBlog/blob/main/public/assets/Dashboard.gif)
 
 ## License
 
